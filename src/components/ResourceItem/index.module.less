@@ -1,0 +1,40 @@
+@import "~@common/less/function.less";
+
+.resource {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  .bg(228px, 58px, "~@assets/images/components/resource/bg.png");
+  .left {
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    .SPIRIT {
+      .bg(34px, 34px, "~@assets/images/components/resource/SPIRIT.png");
+    }
+    .GOLD {
+      .bg(34px, 34px, "~@assets/images/components/resource/GOLD.png");
+    }
+    .MMR {
+      .bg(34px, 34px,"~@assets/images/components/resource/MMR.png");
+    }
+    .USDT {
+      .bg(34px, 34px, "~@assets/images/components/resource/USDT.png");
+    }
+  }
+  .right {
+    width: 170px;
+    position: relative;
+    padding-left: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

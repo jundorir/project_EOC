@@ -1,0 +1,263 @@
+.drawPrize{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .drawPrizeMain{
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .drawPrizeFooterBg{
+    position: absolute;
+    bottom: 0;
+    left: 97px;
+    width: 568px;
+    height: 211px;
+    background: url("~@assets/images/tavern/animation_footer_bg.png") center center no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+  .drawPrizeChest{
+    position: absolute;
+    width: 247px;
+    height: 243px;
+    left: 50%;
+    bottom: 70px;
+    margin-left: -123.5px;
+    background: url("~@assets/images/tavern/animation_chest.png") center center no-repeat;
+    background-size: contain;
+    z-index: 3;
+    //display: none;
+    //opacity: 0.7;
+  }
+  .drawPrizeChestAnimation{
+    animation: animationChest .8s linear infinite;
+  }
+  .drawPrizeChestOpen{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    bottom: 45px;
+    margin-left: -200px;
+    background: url("~@assets/images/tavern/animation_chest_open.png") center center no-repeat;
+    background-size: contain;
+    z-index: 3;
+    visibility: hidden;
+  }
+  .drawPrizeChestOpenShow{
+    visibility: visible;
+  }
+  .drawPrizeShadow{
+    position: absolute;
+    width: 339px;
+    height: 137px;
+    bottom: 65px;
+    left: 180px;
+    //margin-left: -100px;
+    z-index: 2;
+    //transform: skew(-64deg, 28deg) rotate(-9deg);
+    background: url("~@assets/images/tavern/animation_shadow.png") left bottom no-repeat;
+    background-size: contain;
+    //transform: rotate(25deg);
+    //border-bottom: 100px solid #000;
+    //border-left: 50px solid transparent;
+    //border-right: 0 solid transparent;
+
+  }
+  .drawPrizeShadowAnimation{
+    animation: animationShadow .8s linear infinite;
+  }
+  .drawPrizeShadowAnimationDelay{
+    animation: animationShadow .8s linear .4s infinite;
+  }
+}
+@keyframes  animationShadow{
+  0%{
+    transform: scale(1);
+    //bottom: 90px;
+    //left: 180px;
+  }
+  10%{
+    transform:  scale(1);
+    //bottom: 90px;
+    //left: 180px;
+  }
+  50%{
+    transform: scale(0.8);
+    //bottom: 70px;
+    //left: 200px;
+  }
+  90%{
+    transform: scale(0.6);
+    //bottom: 50px;
+    //left: 220px;
+  }
+  100%{
+    transform: scale(1);
+    //bottom: 90px;
+  }
+}
+@keyframes  animationChest{
+  0%{
+    bottom: 75px;
+    //transform: rotate(-7deg);
+  }
+  10%{
+    bottom: 75px;
+    transform: rotate(-7deg);
+  }
+  15%{
+    bottom: 85px;
+    transform: rotate(7deg);
+  }
+  30%{
+    bottom: 95px;
+    transform: rotate(-7deg);
+  }
+  45%{
+    bottom: 105px;
+    transform: rotate(7deg);
+  }
+  60%{
+    bottom: 110px;
+    transform: rotate(-7deg);
+  }
+  65%{
+    bottom: 115px;
+    transform: rotate(7deg);
+  }
+  80%{
+    bottom: 120px;
+    transform: rotate(7deg);
+  }
+  100%{
+    bottom: 75px;
+  }
+}
+.drawPrizeOpen{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  //display: flex;
+  z-index: 20;
+  //align-items: center;
+  //justify-content: center;
+  background: rgba(0,0,0,.7);
+  .drawPrizeOpenLoading{
+    position: absolute;
+    left:  50%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    background: url("~@assets/images/tavern/animation_open.png") center center no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+  }
+  .drawPrizeProp{
+    width: 100%;
+  }
+  .propTitle{
+    font-size: 30px;
+    font-family: Kaiti SC;
+    font-weight: bold;
+    color: #FFF04A;
+    padding: 130px 0 115px 0;
+    text-align: center;
+  }
+  .prizeList{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    .prizeListItem{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+      img{
+        display: block;
+        width: 78px;
+        height: 78px;
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+      >p{
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: bold;
+        color: #FFFFFF;
+        opacity: 0.5;
+        margin: 0;
+      }
+    }
+  }
+}
+.drawPrizeHero{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scaleAndOpacity .7s ease 0s 1 normal forwards;
+  transform: scale(0);
+  opacity: 0;
+  .drawPrizeHeroContent{
+    position: relative;
+    .sunBgLoop{
+      width: 750px;
+      height: 750px;
+      position: absolute;
+      top: -80px;
+      left: -50px;
+      z-index: 0;
+      background: url("~@assets/images/tavern/animation_sun.png") center center no-repeat;
+      animation: rotate 10s linear infinite;
+      background-size: cover;
+      transform: scale(2);
+    }
+  }
+  .drawPrizeHeroContentHero{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 34px;
+    margin-left: 30px;
+  }
+  .drawPrizeHeroContentFooter{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+}
+@keyframes scaleAndOpacity {
+  0%{
+    transform: scale(.2);
+    opacity: 0;
+  }
+  80%{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg) scale(1.4);
+  }
+  100%{
+    transform: rotate(360deg) scale(1.4);
+  }
+}

@@ -1,0 +1,123 @@
+@import "~@common/less/animation.less";
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  animation: popin 0.2s;
+}
+.body {
+  width: 675px;
+  height: 1000px;
+  padding: 0 38px;
+  box-sizing: border-box;
+  background: url(~@assets/images/union/detail_bg.png) center center no-repeat;
+  background-size: 675px 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 30px;
+  color: rgba(255, 237, 72, 1);
+  text-align: center;
+  font-weight: normal;
+  margin-top: 78px;
+  margin-bottom: 53px;
+}
+.header {
+  display: flex;
+}
+.aside {
+  flex: 1;
+}
+.name {
+  width: 402px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 66px;
+  background: url(~@assets/images/union/input_bg.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input {
+    width: 250px;
+    text-indent: 1em;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    flex: 1;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+  }
+}
+.tip {
+  text-align: right;
+  margin-top: 30px;
+  span {
+    color: rgba(255, 237, 72, 1);
+    margin-left: 20px;
+  }
+}
+.form_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 57px;
+}
+.switch {
+  display: flex;
+  width: 308px;
+  height: 66px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background: url(~@assets/images/union/switch_bg.png) center center no-repeat;
+  background-size: cover;
+  &.system{
+    justify-content: center;
+  }
+  button {
+    border: none;
+    outline: none;
+    width: 42px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+.switch_value {
+  .powerInput {
+    min-width: 20px;
+    max-width: 95px;
+    outline-style: none;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22px;
+    text-align:center;
+    margin-left: 10px;
+  }
+}
+.switch_left {
+  background-image: url(~@assets/images/union/btn_left.png);
+}
+.switch_right {
+  background-image: url(~@assets/images/union/btn_right.png);
+}
+.actions {
+  margin-top: 66px;
+  display: flex;
+  justify-content: space-between;
+}

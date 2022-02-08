@@ -1,0 +1,56 @@
+@import "~@common/less/function.less";
+.app {
+  position: relative;
+  height: 100vh;
+  width: 750px;
+  .top {
+    .bg(750px, 242px, "~@assets/images/top.png");
+    position: fixed;
+    z-index: 9;
+    pointer-events: none;
+  }
+  // .top {
+  //   .bg(750px, 242px, "~@assets/images/top.png");
+  //   position: fixed;
+  //   z-index: 9;
+  // }
+  .middle {
+    height: 100%;
+    // width: 100%;
+    width: 750px;
+    background-image: url("~@assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    .top {
+      .bg(750px, 242px, "~@assets/images/top.png");
+      position: fixed;
+    }
+
+    .bottom {
+      .bg(750px, 202px, "~@assets/images/bottom.png");
+      position: fixed;
+      bottom: 0;
+
+      .back {
+        position: absolute;
+        top: 36px;
+        width: 150px;
+        height: 150px;
+        // border-radius: 75px;
+      }
+
+      .route {
+        .text(30px,#E79F38,600, PingFang SC);
+        position: relative;
+        text-align: center;
+        top: 82px;
+        .icon {
+          width: 24px;
+          height: 24px;
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+}

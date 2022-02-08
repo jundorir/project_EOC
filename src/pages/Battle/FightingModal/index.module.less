@@ -1,0 +1,259 @@
+@import "~@common/less/function.less";
+.fighting{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0,0,0,1);
+
+  .middle {
+    height: 100%;
+    width: 100%;
+    background-image: url("~@assets/images/battle/fighting_page_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    .top {
+      .bg(750px, 242px, "~@assets/images/top.png");
+      position: fixed;
+    }
+
+    .bottom {
+      .bg(750px, 202px, "~@assets/images/battle/fighting_footer.png");
+      position: fixed;
+      bottom: 0;
+      z-index: 10;
+      .back {
+        position: absolute;
+        top: 36px;
+        width: 150px;
+        height: 150px;
+        z-index: 100;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      .route {
+        .text(30px,#E79F38,600, PingFang SC);
+        position: relative;
+        text-align: center;
+        top: 82px;
+      }
+    }
+    .main{
+      height: 100%;
+      padding: 81 px 0 173px 0;
+      z-index: 1;
+      box-sizing: border-box;
+      position: relative;
+      .bossHero{
+        position: absolute;
+        left: 0;
+        top: 81px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .heroItem{
+          width: 360px;
+          height: 600px;
+          overflow: hidden;
+          //transform: rotateX(50deg) translateZ(-80px) scale(0.75);
+
+        }
+        .bossBgAnimation{
+          position: absolute;
+          z-index: 2;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: url("~@assets/images/battle/attacked_hero.png") center center no-repeat;
+          background-size: contain;
+        }
+      }
+      .myHero{
+        position: absolute;
+        bottom: 150px;
+        left: 0;
+        width: 100%;
+        //height: 50%;
+        display: flex;
+        //padding: 0 10px;
+        box-sizing: border-box;
+        //justify-content: flex-end;
+        .heroItem{
+          flex: 1;
+          transition: all .3s;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          position: relative;
+          transform: translate(0 , 150%);
+          .heroItemScale{
+            transform: scale(0.75);
+          }
+          .heroBgAnimation{
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url("~@assets/images/battle/hero_attacked_animation.png") center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
+
+    }
+    .heroDefeated{
+      filter: grayscale(1);
+    }
+    .bossDefeated{
+      filter: grayscale(1);
+      animation: bossDefeated .3s linear forwards;
+    }
+    .heroItemPk{
+      animation: heroItemPk .4s linear infinite;
+    }
+    .mainShow{
+      .myHero{
+        .heroItem{
+          transform: translate(0 , 0);
+          &:nth-child(1){
+
+          }
+          &:nth-child(2){
+          }
+          &:nth-child(3){
+          }
+          &:nth-child(4){
+          }
+          &:nth-child(5){
+          }
+        }
+      }
+    }
+    .hero_attacked_bg{
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: url("~@assets/images/battle/attacked_hero.png") center center no-repeat;
+      background-size: contain;
+    }
+    .killed{
+      filter: grayscale(1)
+    }
+    .blueHeroAttack{
+      animation: blueHeroAttack .3s;
+    }
+    .redHeroAttack{
+      animation: redHeroAttack .3s;
+    }
+    .heroAttacked{
+      animation: heroAttacked .3s;
+    }
+  }
+
+  .heroItemHp{
+
+  }
+}
+.none{
+
+}
+@keyframes bossDefeated {
+  0%{
+    transform: rotate(-2deg);
+  }
+  20%{
+    transform: rotate(2deg);
+  }
+  40%{
+    transform: rotate(-2deg);
+  }
+  60%{
+    transform: rotate(2deg);
+  }
+  80%{
+    transform: rotate(-2deg);
+  }
+  100%{
+    transform: rotate(0deg);
+    filter: grayscale(1);
+  }
+}
+@keyframes heroItemPk {
+  0%{
+  }
+  10%{
+    //left: 250px;
+    //bottom: 300px;
+    //margin-top: -100px;
+    //transform: rotate(30deg);
+    top: -30%;
+    left: 10%
+    //z-index: 10;
+  }
+  //30%{
+  //  //left: 250px;
+  //  //bottom: 300px;
+  //  //margin-top: -100px;
+  //  //transform: rotate(30deg);
+  //  top: -40%;
+  //  left: 20%
+  //  //z-index: 10;
+  //}
+  50%{
+    //transform: rotate(30deg);
+    top: -50%;
+    left: 20%
+  }
+  //90%{
+  //  //transform: rotate(-30deg);
+  //  top: -30%;
+  //  left: 20%
+  //}
+  90%{
+    top: 0;
+    left: 0;
+  }
+  100%{
+  }
+}
+@keyframes redHeroAttack {
+  0%{
+    transform: translate(0, 0);
+  }
+  10%{
+    //left: 250px;
+    //bottom: 300px;
+    //margin-top: -100px;
+    transform: translate(0, 30px);
+    //z-index: 10;
+  }
+  80%{
+    transform: translate(0, 30px);
+    //z-index: 10;
+  }
+  90%{
+    transform: translate(0, 30px);
+    //z-index: 10;
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+@keyframes myHeroShow {
+
+}

@@ -1,0 +1,130 @@
+@import "~@common/less/function.less";
+.operationList {
+  width: 123px;
+  height: 330px;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 250, 250, 0) 1%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  // position: absolute;
+  // top: 80px;
+  // right: 31px;
+  // position: fixed;
+  // top: 170px;
+  // right: 50px;
+  .store,
+  .activity,
+  .invitation,
+  .setting {
+    font-size: 22px;
+    font-weight: 400;
+    color: #f0f0f0;
+    text-align: center;
+    .storeIMG {
+      width: 72px;
+      height: 72px;
+      background: url("~@assets/images/home/operationList_card.png");
+      background-size: 72px 72px;
+      margin: auto;
+    }
+    .activityIMG,
+    .invitationIMG,
+    .settingIMG {
+      width: 80px;
+      height: 80px;
+      background: url("~@assets/images/home/operationList_activity.png");
+      background-size: 80px 80px;
+      margin: 20px auto 0;
+    }
+    .invitationIMG {
+      background: url("~@assets/images/home/operationList_invitation.png");
+      background-size: 80px 80px;
+    }
+    .settingIMG {
+      background: url("~@assets/images/home/operationList_setting.png");
+      background-size: 80px 80px;
+    }
+    .word {
+      margin-top: -4px;
+    }
+  }
+  .store {
+    margin-bottom: 26px;
+    margin-top: -36px;
+    position: relative;
+  }
+}
+@media screen and (max-device-height: 811px) {
+  .operationList {
+    // right: 20px;
+    // background: none;
+    .activity {
+      // margin-top: 70px;
+    }
+    // .invitation {
+    //   position: absolute;
+    //   right: 140px;
+    //   top: 55px;
+    // }
+    // .setting {
+    //   position: absolute;
+    //   right: 140px;
+    //   top: 205px;
+    // }
+  }
+}
+.caption {
+  margin: 35px 0;
+  font-weight: bold;
+  &.top {
+    margin-top: 80px;
+  }
+}
+.changelanguage {
+  .bg(308px, 66px, "~@assets/images/setting/setting_bg.png");
+  box-sizing: border-box;
+  padding: 13.5px 11px;
+  display: flex;
+  justify-content: space-between;
+  .turnLeft {
+    .bg(42px, 39px, "~@assets/images/setting/setting_left.png");
+  }
+  .turnRight {
+    .bg(42px, 39px, "~@assets/images/setting/setting_right.png");
+  }
+  .turnWord {
+    font-size: 22px;
+    font-family: Kaiti SC;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+.changevolume {
+  .bg(308px, 12px, "~@assets/images/setting/setting_line.png");
+  position: relative;
+  margin-bottom: 120px;
+  font-weight: bold;
+  // .button {
+  //   .bg(42px, 39px, "~@assets/images/setting/setting_square.png");
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translate(0, -50%);
+  //   left: 0;
+  // }
+  .precentBox {
+    width: 266px;
+    height: 20px;
+    // background-color: aquamarine;
+    margin: auto;
+    position: relative;
+    .precent {
+      position: absolute;
+      top: -20px;
+      transform: translate(-20px);
+      font-size: 22px;
+      color: #ffffff;
+      opacity: 0.5;
+    }
+  }
+}

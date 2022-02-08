@@ -1,0 +1,81 @@
+.receive{
+  position: absolute;
+  margin-left: 20px;
+  width: 711px;
+  height: 241px;
+  bottom: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(~@assets/images/battle/receive.png) top center
+  no-repeat;
+  background-size: cover;
+  z-index: 6;
+  padding: 0 49px 0 63px;
+  box-sizing: border-box;
+  .receivePrize{
+    display: flex;
+    .prizeItem{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      margin-right: 49px;
+      .prizeItemHeader{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        //margin-bottom: 21px;
+        img{
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
+        .prizeItemNum{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100px;
+          height: 33px;
+          padding-top: 4px;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%);
+          border-radius: 0px 0px 20px 20px;
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: 600;
+          color: #FFFFFF;
+          text-align: center;
+          line-height: 33px;
+          z-index: 1;
+        }
+      }
+      .prizeItemTitle{
+        margin-top: 13px;
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #FEFEFE;
+        opacity: 0.5;
+        text-align: center;
+        line-height: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        //display: none;
+      }
+    }
+  }
+  >button{
+    position: relative;
+    top: 5px;
+  }
+}
+.receiveFooter{
+  position: absolute;
+  width: 750px;
+  height: 240px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  bottom: 126px;
+  left: 0;
+  z-index: 5;
+}

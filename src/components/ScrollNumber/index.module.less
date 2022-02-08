@@ -1,0 +1,37 @@
+@height: 16px;
+@width: 8px;
+@numbers: range(11);
+
+.number {
+  display: inline-block;
+  height: @height;/*no*/
+  width: @width;/*no*/
+  overflow: hidden;
+  ul {
+    margin: 0;
+    padding: 0;
+    width: @width;/*no*/
+    transition: all 0.5s ease-in-out;
+  }
+  li {
+    text-align: center;
+    height: @height;/*no*/
+    width: @width;/*no*/
+    line-height: @height;/*no*/
+    font-size: 16px;/*no*/
+  }
+}
+
+each(@numbers, {
+  .number_@{index} {
+    transform: %(~"translateY(-%d)", @index * @height);/*no*/
+  }
+});
+
+.group {
+  overflow: hidden;
+  display: inline-block;
+  div {
+    float: right;
+  }
+}

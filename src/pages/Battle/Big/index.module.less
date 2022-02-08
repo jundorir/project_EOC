@@ -1,0 +1,305 @@
+.pageMain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .pageHeader{
+    margin-top: 26px;
+    height: 156px;
+    background:  url("~@assets/images/battle/big_top_bg.png") center center no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    padding: 0 100px;
+    position: relative;
+    .pageHeaderLeft{
+      position: absolute;
+      left: 130px;
+      top: 40px;
+      .select{
+        //background: #ccc;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        //opacity: 0.3;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: 15px;
+        width: 281px;
+        height: 54px;
+        background:  url("~@assets/images/battle/select_bg.png") center center no-repeat;
+        background-size: contain;
+        position: relative;
+        line-height: 54px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        &:after{
+          display: block;
+          content: '';
+          position: absolute;
+          width: 42px;
+          height: 39px;
+          right: 8px;
+          top: 8px;
+          background:  url("~@assets/images/battle/select_arrow.png") center center no-repeat;
+          background-size: contain;
+        }
+        span{
+          //width: 90px;
+          color: #FFFFFF;
+          opacity: 0.5;
+          text-align: center;
+          margin-right: 10px;
+        }
+        label{
+          color: #FFFFFF;
+          flex: 1;
+          text-align: left;
+        }
+      }
+      .heroPower{
+        font-size: 24px;
+        line-height: 1;
+        font-family: Kaiti SC;
+        padding-left: 10px;
+        span{
+          //width: 90px;
+          color: #FFFFFF;
+          opacity: 0.5;
+          margin-right: 15px;
+          white-space: nowrap;
+        }
+        label{
+          color: #FFF04A;
+          font-weight: bold;
+          flex: 1;
+          text-align: left;
+        }
+      }
+    }
+    .levelBox{
+      position: absolute;
+      top: 40px;
+      right: 58px;
+      width: 228px;
+      height: 58px;
+      background:  url("~@assets/images/battle/level_bg.png") center center no-repeat;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      padding-left: 70px;
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      opacity: 0.5;
+      line-height: 58px;
+      &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        height: 58px;
+        width: 58px;
+        background:  url("~@assets/images/battle/lightning.png") center center no-repeat;
+        background-size: 22px auto;
+      }
+    }
+
+  }
+  .pageContent{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 135px;
+    .pageContentMain{
+      overflow-y: auto;
+      overflow-x: hidden;
+      .mainList{
+        background:  url("~@assets/images/battle/big_bg.jpg") center center no-repeat;
+        background-size: 100% 100%;
+        padding-top: 160px;
+        padding-bottom: 320px;
+        .bigItem{
+          position: relative;
+          width: 386px;
+          height: 349px;
+          background: url("~@assets/images/battle/big_item_bg.png") center center no-repeat;
+          background-size: contain;
+          margin-bottom: -87px;
+          margin-left: 11px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding-top: 135px;
+          .itemMaskLeft{
+            position: absolute;
+            width: 366px;
+            height: 258px;
+            top: -100px;
+            left: 0;
+            z-index: 2;
+            background: url("~@assets/images/battle/level_mask_left.png") center center no-repeat;
+            background-size: contain;
+            transition: all .3s ;
+          }
+          .itemMaskRight{
+            position: absolute;
+            width: 464px;
+            height: 203px;
+            top: 48px;
+            left: 0;
+            z-index: 1;
+            background: url("~@assets/images/battle/level_mask_right.png") center center no-repeat;
+            background-size: contain;
+            transition: all .3s;
+          }
+          .itemMaskLeftMove{
+            left: -200px;
+            opacity: 0;
+          }
+          .itemMaskRightMove{
+            left: 200px;
+            opacity: 0;
+          }
+          .title{
+            font-size: 30px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #E79F38;
+            line-height: 1;
+            margin-bottom: 30px;
+          }
+          .desc{
+            font-size: 24px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 1;
+            opacity: 0.5;
+            margin-bottom: 26px;
+            label{
+              opacity: 1;
+            }
+          }
+          .progress{
+            width: 192px;
+            height: 23px;
+            background: #1B2326;
+            border-radius: 12px;
+            position: relative;
+            margin: 0 auto 16px auto;
+            .progressLine{
+              position: absolute;
+              left: 5px;
+              top: 50%;
+              height: 14px;
+              background: linear-gradient(0deg, #F0BF28 0%, #FFE953 100%);
+              transform: translate(0, -50%);
+              border-radius: 7px;
+            }
+          }
+          .remark{
+            font-size: 24px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 1;
+            opacity: 0.5;
+          }
+          &:after{
+            display: block;
+            width: 250px;
+            height: 250px;
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+          &:nth-child(2n) {
+            left: 335px;
+          }
+          &:last-child{
+            margin-bottom: 50px;
+          }
+          &:nth-child(1){
+            &:after{
+              top: -124px;
+              background: url("~@assets/images/battle/big_item1.png") center center no-repeat;
+              background-size: contain;
+            }
+          }
+          &:nth-child(2){
+            &:after{
+              top: -100px;
+              background: url("~@assets/images/battle/big_item2.png") center center no-repeat;
+              background-size: contain;
+            }
+          }
+          &:nth-child(3){
+            &:after{
+              top: -74px;
+              background: url("~@assets/images/battle/big_item3.png") center center no-repeat;
+              background-size: contain;
+            }
+          }
+          &:nth-child(4){
+            &:after{
+              top: -100px;
+              background: url("~@assets/images/battle/big_item4.png") center center no-repeat;
+              background-size: contain;
+            }
+          }
+          &:nth-child(5){
+            &:after{
+              top: -100px;
+              background: url("~@assets/images/battle/big_item5.png") center center no-repeat;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .pageFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 200px;
+    padding: 24px 0 0 0;
+  }
+  .footerBtn{
+    position: absolute;
+    bottom: 67px;
+    left: 410px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    z-index: 8;
+    background:  url("~@assets/images/battle/icon_explain.png") 8px center no-repeat;
+    background-size: 24px;
+    //display: none;
+  }
+
+  .rewardBtn{
+    position: fixed;
+    width: 750px;
+    bottom: 152px;
+    left: 269px;
+    z-index: 15;
+  }
+}
+
+.pageMainHidden{
+  left: -100%;
+  opacity: 0;
+}

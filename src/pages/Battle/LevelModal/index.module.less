@@ -1,0 +1,304 @@
+@import "~@common/less/function.less";
+.levelModal{
+  width: 100%;
+
+  .firstUser{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    .firstUserIcon{
+      width: 93px;
+      height: 89px;
+      >div{
+        transform: scale(0.637);
+        transform-origin: left top;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    .firstUserName{
+      flex: 1;
+      margin-left: 23px;
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 1;
+      >div{
+        opacity: 0.5;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+      }
+      >label{
+        color: #FFED48;
+      }
+    }
+  }
+  .middle{
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    &:before,&:after{
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      width: 400px;
+      height: 1px;
+      background: #FFB116;
+      opacity: 0.2;
+    }
+    &:before{
+      top: 0;
+    }
+    &:after{
+      bottom: 0;
+    }
+    .middleTit{
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 28px;
+      line-height: 1;
+      >div{
+        margin-bottom: 20px;
+      }
+      >span{
+        opacity: 0.5;
+        color: #FFFFFF;
+      }
+      >label{
+        margin-left: 12px;
+        color: #FF2E08;
+      }
+    }
+    .middleHero{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      .middleHeroItem{
+        height: 114px;
+        width: 114px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .middleHeroItemScale{
+          transform: scale(0.75);
+          transform-origin: top left;
+        }
+      }
+    }
+    .middleDesc{
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      text-align: center;
+      >span{
+        opacity: 0.5;
+        color: #FFFFFF;
+      }
+      >label{
+        color: #FFED48;
+        margin-left: 12px;
+      }
+    }
+  }
+  .prize{
+    .prizeTit{
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: #FFFFFF;
+      opacity: 0.5;
+      margin-bottom: 38px;
+    }
+    .prizeBox{
+      display: flex;
+      margin-bottom: 38px;
+      .prizeItem{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        img{
+          display: block;
+          width: 56px;
+        }
+        label{
+          margin-left: 24px;
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: bold;
+          color: #FFFFFF;
+          opacity: 0.5;
+        }
+      }
+      .prizeItemGray{
+        filter: grayscale(1);
+      }
+    }
+
+  }
+}
+.tit{
+  font-size: 30px;
+  font-family: Kaiti SC;
+  font-weight: bold;
+  color: #FFED48;
+  text-align: center;
+  padding:  0 0 20px 0;
+  position: relative;
+  top: -40px;
+}
+.ppZero{
+  //font-size: 16px;
+  white-space: nowrap;
+}
+//.modal_container{
+//  position: fixed;
+//  top: 0;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  animation: scaleAndOpacity .7s ease 0s 1 normal forwards;
+//  z-index: 1001;
+//}
+//.mask {
+//  position: absolute;
+//  width: 100%;
+//  height: 100%;
+//  left: 0;
+//  top: 0;
+//  background: rgba(0, 0, 0, 0.8);
+//  z-index: 0;
+//}
+//.body {
+//  width: 630px;
+//  position: relative;
+//}
+//.content {
+//  background: RGBA(22, 32, 45, 1);
+//  width: 490px;
+//  margin: 20px auto 0;
+//  min-height: 400px;
+//  border: 5px solid RGBA(139, 109, 72, 1);
+//  display: flex;
+//  align-items: center;
+//  flex-direction: column;
+//  font-size: 22px;
+//  color: rgba(255, 255, 255, 0.5);
+//  position: relative;
+//  .contentSun{
+//    width: 750px;
+//    height: 750px;
+//    position: absolute;
+//    top: -120px;
+//    left: -130px;
+//    z-index: -1;
+//    background: url("~@assets/images/tavern/animation_sun.png") center center no-repeat;
+//    animation: rotate 10s linear infinite;
+//    background-size: cover;
+//    transform: scale(2);
+//    transform-origin: center center;
+//  }
+//}
+.footer{
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  >button{
+    &:last-child{
+      margin-left: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 17px;
+        margin-left: 17px;
+      }
+    }
+
+  }
+}
+//.cloak {
+//  pointer-events: none;
+//  width: 100%;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  height: 300px;
+//  background: url(~@assets/images/components/general_modal/flag.png) top center
+//  no-repeat;
+//  background-size: cover;
+//}
+//.title {
+//  color: white;
+//  font-size: 36px;
+//  text-align: center;
+//  font-weight: normal;
+//  margin: 80px 0 0 0 ;
+//}
+//.texture {
+//  width: 402px;
+//  height: 22px;
+//  background-position: center center;
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//}
+//.texture_up {
+//  margin-top: 30px;
+//  margin-bottom: 30px;
+//  background-image: url(~@assets/images/components/general_modal/texture_up.png);
+//}
+//.main {
+//  width: 100%;
+//  min-height: 80px;
+//  //max-height: 600px;
+//  overflow: auto;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  align-items: center;
+//  line-height: 1.5;
+//  padding: 0 40px;
+//  box-sizing: border-box;
+//}
+//.texture_down {
+//  margin-top: 30px;
+//  background-image: url(~@assets/images/components/general_modal/texture_down.png);
+//}
+//.actions {
+//  width: 100%;
+//  display: flex;
+//  margin-top: 50px;
+//  justify-content: space-around;
+//  margin-bottom: 100px;
+//}
+//@keyframes rotate {
+//  0%{
+//    transform: rotate(0deg) scale(1.4);
+//  }
+//  100%{
+//    transform: rotate(360deg) scale(1.4);
+//  }
+//}
+//@keyframes scaleAndOpacity {
+//  0%{
+//    transform: scale(.2);
+//    opacity: 0;
+//  }
+//  80%{
+//    transform: scale(1.1);
+//    opacity: 1;
+//  }
+//  100%{
+//    transform: scale(1);
+//    opacity: 1;
+//  }
+//}

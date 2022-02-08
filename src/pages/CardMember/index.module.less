@@ -1,0 +1,58 @@
+@import "~@common/less/function.less";
+@import "~@common/less/animation.less";
+.inner {
+  width: 750px;
+  // height: 100%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "楷体", "楷体_GB2312";
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 9;
+  animation: fadein 0.2s;
+  .card {
+    margin: 0 auto 43px;
+    .bg(650px, 320px, "~@assets/images/cardMember/cardMember.png");
+  }
+  .wordTwo {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #fff04a;
+  }
+  .buy {
+    width: 100%;
+    .bg(750px, 180px, "~@assets/images/cardMember/cardMember_bg.png");
+    position: relative;
+    margin: 60px 0;
+    &::after {
+      content: "30000 MMR";
+      text-decoration: line-through;
+      // font-weight: normal;
+      opacity: 0.5;
+      position: absolute;
+      left: 208px;
+      top: 33px;
+    }
+    .button {
+      position: absolute;
+      // left: 208px;
+      bottom: 15px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  .color {
+    font-size: 26px;
+    color: #fff04a;
+  }
+}
+.top {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e89f37;
+  margin: 50px auto 25px;
+}

@@ -1,0 +1,43 @@
+@import "~@common/less/function.less";
+
+.heroStarUp {
+  height: 600px;
+  flex-shrink: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+  .list {
+    display: flex;
+    height: 373px;
+    .item {
+      width: 232px;
+      height: 373px;
+      flex-shrink: 0;
+      position: relative;
+
+      &.empty {
+        border: 1px solid #ffffff;
+        opacity: 0.3;
+        .text(22px,#FFFFFF, 400, PingFang SC);
+        text-align: center;
+        line-height: 373px;
+        box-sizing: border-box;
+      }
+
+      &.last {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+  .tips {
+    .text(26px,  rgba(254, 254, 254, 0.5), 400, PingFang SC);
+    margin-top: 15px;
+  }
+}

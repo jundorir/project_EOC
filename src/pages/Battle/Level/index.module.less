@@ -1,0 +1,273 @@
+@import "~@common/less/function.less";
+.pageMain {
+  position: absolute;
+  width: 750px;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 8;
+  background: #000;
+  transition: all .3s;
+
+  display: flex;
+  opacity: 0;
+  background: url("~@assets/images/bg.jpg")  #000 left top no-repeat;
+  background-size: 100% 100%;
+  .pageHeader{
+    margin-top: 26px;
+    height: 136px;
+    background:  url("~@assets/images/hire/selectClass_bg.png") center center no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    padding: 0 100px;
+    position: relative;
+    .levelBox{
+      position: absolute;
+      top: 54px;
+      right: 58px;
+      width: 228px;
+      height: 58px;
+      background:  url("~@assets/images/battle/level_bg.png") center center no-repeat;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      padding-left: 70px;
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      opacity: 0.5;
+      line-height: 58px;
+      &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        height: 58px;
+        width: 58px;
+        background:  url("~@assets/images/battle/lightning.png") center center no-repeat;
+        background-size: 22px auto;
+      }
+    }
+    .select{
+      position: absolute;
+      left: 104px;
+      top:  54px;
+      //width: 212px;
+      //background: #ccc;
+      font-size: 24px;
+      line-height: 1;
+      font-family: Kaiti SC;
+      span{
+        //width: 90px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        margin-right: 15px;
+        //width: 80px;
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        i{
+          font-style: normal;
+        }
+        //&:after{
+        //  content: " ";
+        //  display: inline-block;
+        //  width: 100%;
+        //}
+      }
+      label{
+        color: #FFFFFF;
+        flex: 1;
+        text-align: left;
+      }
+      .selectText1{
+        margin-bottom: 10px;
+        display: flex;
+      }
+      .selectText2{
+        display: flex;
+        label{
+          color: #FFF04A;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .pageContent{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 135px;
+    .pageContentMain{
+      overflow-y: auto;
+      overflow-x: hidden;
+      .mainList{
+        padding-top: 80px;
+        padding-bottom: 340px;
+        .levelItem{
+          position: relative;
+          width: 386px;
+          height: 349px;
+          //background: url("~@assets/images/battle/big_item_bg.png") center center no-repeat;
+          background-size: contain;
+          margin-bottom: -100px;
+          margin-left: 11px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding-bottom: 135px;
+          &:nth-child(2n){
+            left: 335px;
+          }
+          .levelItemHeader{
+            position: relative;
+            width: 220px;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 34px;
+            z-index: 2;
+          }
+          .levelItemHeader1{
+            background: url("~@assets/images/battle/level_item_bg1.png") center center no-repeat;
+            background-size: contain;
+          }
+          .levelItemHeader2{
+            background: url("~@assets/images/battle/level_item_bg2.png") center center no-repeat;
+            background-size: contain;
+          }
+          .levelItemHeader3{
+            background: url("~@assets/images/battle/level_item_bg3.png") center center no-repeat;
+            background-size: contain;
+          }
+          .levelItemHeader4{
+            background: url("~@assets/images/battle/level_item_bg4.png") center center no-repeat;
+            background-size: contain;
+          }
+          .levelItemHeader5{
+            background: url("~@assets/images/battle/level_item_bg5.png") center center no-repeat;
+            background-size: contain;
+          }
+          .levelItemHeaderFooter{
+            position: absolute;
+            top: 200px;
+            width: 233px;
+            height: 117px;
+            background: #000;
+            z-index: 1;
+            background: url("~@assets/images/battle/level_item_footer.png") center center no-repeat;
+            background-size: contain;
+          }
+          .itemMaskLeft{
+            position: absolute;
+            width: 366px;
+            height: 258px;
+            top: 0;
+            left: -20px;
+            z-index: 2;
+            background: url("~@assets/images/battle/level_mask_left.png") center center no-repeat;
+            background-size: contain;
+            transition: all .3s .3s;
+          }
+          .itemMaskRight{
+            position: absolute;
+            width: 464px;
+            height: 203px;
+            top: 138px;
+            left: -20px;
+            z-index: 3;
+            background: url("~@assets/images/battle/level_mask_right.png") center center no-repeat;
+            background-size: contain;
+            transition: all .3s .3s;
+          }
+          .itemMaskLeftMove{
+            left: -200px;
+            opacity: 0;
+          }
+          .itemMaskRightMove{
+            left: 200px;
+            opacity: 0;
+          }
+          .title{
+            font-size: 30px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #E79F38;
+            line-height: 1;
+            margin-bottom: 30px;
+          }
+
+        }
+      }
+      .mainList1{
+        background:  url("~@assets/images/battle/level_bg1.jpg") center center repeat-y;
+        background-size: 100% auto;
+      }
+      .mainList2{
+        background:  url("~@assets/images/battle/level_bg2.jpg") center center repeat-y;
+        background-size: 100% auto;
+      }
+      .mainList3{
+        background:  url("~@assets/images/battle/level_bg3.jpg") center center repeat-y;
+        background-size: 100% auto;
+      }
+      .mainList4{
+        background:  url("~@assets/images/battle/level_bg4.jpg") center center repeat-y;
+        background-size: 100% auto;
+      }
+      .mainList5{
+        background:  url("~@assets/images/battle/level_bg5.jpg") center center repeat-y;
+        background-size: 100% auto;
+      }
+    }
+
+  }
+  .pageFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 202px;
+    //padding: 24px 0 0 0;
+    z-index: 10;
+    .bg(750px, 202px, "~@assets/images/bottom.png");
+    .back {
+      position: absolute;
+      top: 36px;
+      width: 150px;
+      height: 150px;
+    }
+
+    .route {
+      .text(30px,#E79F38,600, PingFang SC);
+      position: relative;
+      text-align: center;
+      top: 82px;
+    }
+  }
+  .footerBtn{
+    position: absolute;
+    bottom: 67px;
+    left: 410px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    z-index: 5;
+    background:  url("~@assets/images/battle/icon_explain.png") 8px center no-repeat;
+    background-size: 24px;
+  }
+}
+
+.pageMainShow{
+  //transform: translate(0, 0);
+  opacity: 1;
+  left: 0;
+}

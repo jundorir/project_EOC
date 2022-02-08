@@ -1,0 +1,188 @@
+@import "~@common/less/function.less";
+@import "~@common/less/animation.less";
+.headerNum {
+  width: 228px;
+  height: 58px;
+  background: url("~@assets/images/tavern/header_num_bg.png") center center
+    no-repeat;
+  background-size: contain;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  margin-right: 80px;
+  animation: fadein 0.2s;
+  img {
+    position: absolute;
+    height: 32px;
+    left: 13px;
+    top: 13px;
+  }
+  label {
+    font-size: 22px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 80px;
+    opacity: 0.7;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  height: calc(100% - 162px);
+  animation: fadein 0.2s;
+  .topBox {
+    height: 200px;
+  }
+  .scroll {
+    width: 100%;
+    margin-top: 15px;
+    overflow: auto;
+    flex: auto;
+    .city {
+      width: 650px;
+      margin: auto;
+      font-size: 22px;
+      font-weight: 400;
+      color: #ffffff40;
+      .top,
+      .middle,
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        &.center {
+          justify-content: center;
+        }
+        .cityItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .item {
+            &.one {
+              .bg(285px, 302px, "~@assets/images/unionBattle/unionBattle_yelu.png");
+            }
+            &.two {
+              .bg(200px, 207px, "~@assets/images/unionBattle/unionBattle_junshi_small.png");
+            }
+            &.three {
+              .bg(200px, 207px, "~@assets/images/unionBattle/unionBattle_babilun_small.png");
+            }
+            &.four {
+              .bg(200px, 207px, "~@assets/images/unionBattle/unionBattle_yadian_small.png");
+            }
+            &.five {
+              .bg(200px, 207px, "~@assets/images/unionBattle/unionBattle_luoma_small.png");
+            }
+            &.six {
+              .bg(200px, 207px, "~@assets/images/unionBattle/unionBattle_dibisi_small.png");
+            }
+            &.seven {
+              .bg(200px, 207px, "~@assets/images/unionBattle/unionBattle_dama_small.png");
+            }
+          }
+          .info {
+            width: 200px;
+            text-align: center;
+            margin-top: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            &.infoWidth {
+              width: 285px;
+            }
+            & > span {
+              color: #d2b05b;
+            }
+          }
+          .tip {
+            margin-top: 8px;
+            .tipnum {
+              color: #ffffff80;
+            }
+          }
+        }
+      }
+    }
+  }
+  .regDetailsBox {
+    width: 750px;
+    height: 180px;
+    padding: 20px 0;
+    .regDetails {
+      // width: 626px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 20px;
+      color: #ffffff40;
+      margin: 0 auto 0;
+      .left {
+        display: flex;
+        align-items: center;
+        .leftInfo {
+          margin-left: 24px;
+          .name {
+            max-width: 280px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #d2b05b;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+          .people {
+            margin: 10px 0;
+            .number {
+              color: #d2b05b;
+            }
+          }
+          .toView {
+            text-decoration: underline;
+            position: relative;
+            .toViewLayer {
+              width: 100px;
+              height: 30px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 9;
+            }
+          }
+        }
+      }
+      .right {
+        .buton {
+          font-size: 24px;
+          font-weight: bold;
+          color: #ffffff;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+.isSure {
+  text-align: center;
+  margin: 50px 0;
+}
+.needMoney {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e89f37;
+  margin-left: 50px;
+}

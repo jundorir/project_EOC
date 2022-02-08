@@ -1,0 +1,88 @@
+.modalBG {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #ffffff;
+  font-size: 28px;
+  .modalBox {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    // overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 36px;
+      font-weight: 600;
+      color: #e89f37;
+    }
+    .details {
+      width: 675px;
+      height: 923px;
+      max-height: 80vh;
+      background: url("~@assets/images/unionBattle/modal_frame.png");
+      background-size: 675px 923px;
+      background-repeat: no-repeat;
+      margin: 30px 0;
+      .contain {
+        height: 92.5%;
+        // background: #ffffff;
+        margin: 48px 40px 0;
+        overflow: auto;
+        .inner {
+          font-size: 22px;
+          .item {
+            display: flex;
+            position: relative;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid #ffffff20;
+            padding-bottom: 26px;
+            .middle {
+              width: 150px;
+            }
+            .white {
+              color: #ffffff50;
+            }
+            .yellow {
+              color: #e89f37;
+              margin-top: 20px;
+              margin-right: 60px;
+              &.money {
+                width: 150px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              &.noneRight {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .button {
+      background: url("~@assets/images/buttonFrame.png");
+      width: 200px;
+      height: 78px;
+      background-size: 200px 78px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffed48;
+      line-height: 78px;
+      text-align: center;
+    }
+  }
+}

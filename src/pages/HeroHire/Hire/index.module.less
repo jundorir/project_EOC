@@ -1,0 +1,86 @@
+.Hire {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  .HeroConfig {
+    display: flex;
+    height: 580px;
+    .CardBox {
+      padding-top: 110px;
+      padding-left: 47px;
+      width: 372px;
+      box-sizing: border-box;
+    }
+    .HeroConfigForm {
+      width: 373px;
+      padding-top: 90px;
+      :global(.adm-list) {
+        background: transparent;
+        :global(.adm-list-inner) {
+          :global(.adm-form-item) {
+            :global(.adm-list-item-title) {
+              :global(.adm-form-item-label-required) {
+                display: none;
+              }
+              :global(.adm-form-item-label) {
+                font-size: 22px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #fefefe;
+                opacity: 0.5;
+              }
+            }
+            .HeroConfigFormInput {
+              width: 279px;
+              height: 45px;
+              background-image: url(~@assets/images/hire/heroInput.png);
+              background-size: 100% 100%;
+              padding-left: 25px;
+              input {
+                font-size: 22px;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #fff04a;
+                line-height: 22px;
+              }
+              ::placeholder {
+                font-size: 22px;
+                color: #ffffff;
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+      :global(.adm-form-footer) {
+        text-align: center;
+      }
+    }
+  }
+  .SelectorArea {
+    margin-top: 34px;
+    padding-left: 56px;
+    padding-right: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93px;
+    background-image: url(~@assets/images/hire/selectClass_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .HeroArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-top: 30px;
+    height: calc(100vh - 920px);
+    overflow: hidden scroll;
+
+    .HeroThumb {
+      width: 25%;
+    }
+  }
+}

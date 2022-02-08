@@ -1,0 +1,56 @@
+.MarketSelector {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .SelectorClass {
+    width: 41px;
+    height: 28px;
+    z-index: 99; //避免被遮挡
+  }
+  :global(.adm-selector) {
+    z-index: 98;
+    :global(.adm-selector-item) {
+      padding-left: 10px;
+      padding-right: 10px;
+      background: transparent;
+      font-size: 32px;
+      font-family: Kaiti SC;
+      font-weight: bold;
+      color: rgba(254, 254, 254, 0.3);
+      transition: none;
+      &:global(.adm-selector-item-active) {
+        color: #fefefe;
+      }
+    }
+  }
+  :global(.adm-popover) {
+    z-index: 1; //避免被下方内容遮挡
+    padding-top: 45px;
+    :global(.adm-popover-arrow) {
+      display: none;
+    }
+    :global(.adm-popover-inner) {
+      background: transparent;
+      :global(.adm-popover-inner-content) {
+        padding: 0;
+        box-sizing: border-box;
+        width: 182px;
+        height: 276px;
+        background-image: url("~@assets/images/hire/selectClass_menu.png");
+        background-size: 100% 100%;
+        padding-top: 20px;
+        padding-left: 10px;
+        :global(.adm-popover-inner-menu) {
+          min-width: unset;
+          :global(.adm-button) {
+            font-size: 24px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

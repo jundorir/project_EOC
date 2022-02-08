@@ -1,0 +1,46 @@
+@import "~@common/less/function.less";
+
+.LevelUp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .hero {
+    // margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    overflow: hidden;
+    align-items: center;
+    // transform: translate(-50%, -30%);
+    // top: 30%;
+    // left: 50%;
+    // position: relative;
+  }
+
+  .box {
+    flex-shrink: 0;
+    padding: 0 121px 0 133px;
+
+    .number {
+      width: 498px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      .left {
+        .text(22px,#FEFEFE, 400, PingFang SC);
+      }
+      .right {
+        .text(22px,rgba(255, 255, 255, 0.5), 400, PingFang SC);
+      }
+    }
+
+    .materialList {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      height: 140px;
+    }
+  }
+}

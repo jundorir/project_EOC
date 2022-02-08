@@ -1,0 +1,70 @@
+@import "~@common/less/function.less";
+
+.PropsCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("~@assets/images/market/props_bg_l.png");
+  background-size: 100% 100%;
+  .images {
+    width: 150px;
+    height: 150px;
+  }
+  .images_s {
+    width: 120px;
+    height: 120px;
+  }
+  .title_s,
+  .title_m,
+  .title_l {
+    margin: 0;
+    .text(30px, #ffffff, bold, Kaiti SC);
+    word-wrap: break-word;
+    text-align: center;
+  }
+  .title_s {
+    font-size: 24px;
+    margin-top: 36px;
+  }
+  .title_m {
+    margin-top: 38px;
+  }
+  .title_l {
+    margin-top: 48px;
+  }
+}
+.material {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .images {
+    height: 130px;
+    width: 130px;
+  }
+
+  .quantity {
+    position: absolute;
+    top: 81px;
+    width: 130px;
+    height: 49px;
+    background-image: url("~@assets/images/market/bottom_shadow.png");
+    background-size: 100% 100%;
+    font-size: 26px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 49px;
+    text-align: center;
+  }
+  .title {
+    .text(22px,rgba(254, 254, 254, 0.5), 400, PingFang SC);
+    white-space: nowrap;
+    margin-top: 17px;
+  }
+}

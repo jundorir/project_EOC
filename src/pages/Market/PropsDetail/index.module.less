@@ -1,0 +1,86 @@
+.SaleDetail {
+  height: 100%;
+  .ContentBox {
+    padding-top: 108px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 320px);
+    overflow: hidden scroll;
+    .CardBox {
+      width: 374px;
+      height: 618px;
+    }
+    .DetailContent {
+      margin-top: 50px;
+      p {
+        margin: 0;
+        display: flex;
+        > span {
+          font-size: 26px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #e79f38;
+          opacity: 1;
+          &:first-child {
+            color: #fefefe;
+            width: 100px;
+            opacity: 0.5;
+          }
+          &:nth-child(2) {
+            margin-right: 19px;
+            color: #fefefe;
+            opacity: 0.5;
+          }
+        }
+        .unit {
+          margin-left: 10px;
+          font-size: 22px;
+        }
+        .CopyBtn {
+          width: 33px;
+          height: 36px;
+          margin-left: 19px;
+        }
+      }
+      p + p {
+        margin-top: 20px;
+      }
+      .almost_price {
+        margin-top: 0px;
+        margin-left: 110px;
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #e79f38;
+      }
+    }
+  }
+  .DetailFooter {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 15px;
+    bottom: 155px;
+    background: inherit;
+    button + button {
+      margin-left: 68px;
+    }
+  }
+}
+.content {
+  padding: 49px 0;
+  div {
+    p {
+      margin: 0;
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 600;
+      color: #ffffff;
+      opacity: 0.5;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.body {
+  position: absolute;
+  top: 50px;
+  right: 35px;
+  left: 35px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.content {
+  width: 675px;
+  height: 1125px;
+  background: url(~@assets/images/union/detail_bg.png) center center no-repeat;
+  background-size: 675px 1125px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  padding: 57px 45px 57px 38px;
+}
+.info {
+  flex: 1;
+  min-width: 0;
+  margin-left: 12px;
+}
+.name {
+  color: rgba(255, 237, 72, 1);
+  font-size: 26px;
+  span {
+    color: rgba(255, 45, 16, 1);
+    margin-left: 14px;
+    font-weight: bold;
+  }
+}
+.space {
+  margin-top: 30px;
+  border-top: 1px solid RGBA(8, 13, 15, 1);
+  border-bottom: 1px solid RGBA(36, 45, 48, 1);
+}
+.detail,
+.min_condition,
+.system {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+.list {
+  flex: 1;
+  overflow: hidden;
+  padding: 20px 57px;
+}
+.actions {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,78 @@
+@import "~@common/less/function.less";
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .send {
+    margin-bottom: 10px;
+    margin-right: 180px;
+  }
+
+  .hero {
+    // margin-top: 100px;
+    // display: flex;
+    // justify-content: center;
+    // flex: auto;
+    // overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    overflow: hidden;
+    align-items: center;
+    // transform: translate(-50%, -30%);
+    // top: 30%;
+    // left: 50%;
+    // position: relative;
+  }
+
+  .operation {
+    flex-shrink: 0;
+    padding: 0 154px;
+    display: flex;
+    justify-content: space-between;
+    height: 175px;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-between;
+    .tips {
+      position: absolute;
+      bottom: -40px;
+      width: 214px;
+      text-align: center;
+      .text(26px, rgba(255, 255, 255, 0.5), 400, PingFang SC);
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: auto;
+    text-align: center;
+    .tips1,
+    .tips2,
+    .tips3 {
+      .text(22px, rgba(255, 255, 255, 0.5), 600, PingFang SC);
+    }
+
+    .tips2 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .extra {
+        color: #e89f37;
+      }
+    }
+    .tips3 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .extra {
+        color: #e89f37;
+      }
+    }
+  }
+}

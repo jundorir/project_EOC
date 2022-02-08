@@ -1,0 +1,45 @@
+@import "~@common/less/function.less";
+
+.synthesis {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  // .cover {
+  //   .bg(750px, 93px, "~@assets/images/hero/UI/cover.png");
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   flex-shrink: 0;
+  // }
+
+  // .resource {
+  //   margin-bottom: 20px;
+  //   margin-right: 20px;
+  // }
+
+  .cover {
+    height: 90px;
+    background-color: rgba(226, 155, 54, 0.2);
+    .text(32px, #FEFEFE, bold, Kaiti SC);
+    line-height: 90px;
+    padding: 0 40px;
+  }
+
+  .list {
+    padding: 40px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: auto;
+    text-align: center;
+    .tips1 {
+      .text(22px, #E89F37, 600, PingFang SC);
+    }
+    .tips2 {
+      .text(22px, rgba(255, 255, 255, 0.5), 600, PingFang SC);
+    }
+  }
+}

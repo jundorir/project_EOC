@@ -1,0 +1,84 @@
+.MyEmployeeDetail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000a00f3;
+  align-items: center;
+  padding-top: 90px;
+  .CardBox {
+    width: 455px;
+    height: 734px;
+    margin-left: 30px;
+  }
+  .DetailContent {
+    margin-top: 46px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    .status {
+      font-size: 22px;
+      justify-content: center;
+      color: #e79f38;
+    }
+    p {
+      margin: 0;
+
+      display: flex;
+      > span {
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #fefefe;
+        opacity: 0.5;
+        &:first-child {
+          width: 120px;
+          // display: flex;
+        }
+        &:last-child {
+          margin-left: 60px;
+          color: #e79f38;
+          opacity: 1;
+        }
+      }
+    }
+    p + p {
+      margin-top: 26px;
+    }
+  }
+
+  .DetailFooter {
+    button {
+      margin-left: 30px;
+    }
+    z-index: 1;
+  }
+}
+.empContent {
+  padding: 20px;
+  p {
+    margin: 0;
+    display: flex;
+    > span {
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #fefefe;
+      opacity: 0.5;
+      &:first-child {
+        width: 120px;
+        text-align: right;
+      }
+      &:last-child {
+        margin-left: 60px;
+        color: #e79f38;
+        opacity: 1;
+      }
+    }
+  }
+  .empFinish {
+    justify-content: center;
+    font-size: 22px;
+  }
+  p + p {
+    margin-top: 14px;
+  }
+}

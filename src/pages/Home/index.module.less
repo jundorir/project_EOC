@@ -1,0 +1,130 @@
+@import "~@common/less/function.less";
+.contain {
+  height: 100%;
+  width: 750px;
+  .homeBGI {
+    height: 100%;
+    width: 750px;
+    background-image: url("~@assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    // overflow: auto;
+    .homeBGIInner {
+      overflow: auto;
+      position: absolute;
+      top: 123px;
+      width: 750px;
+      height: calc(100vh - 680px);
+      // background-color: #e8cc40;
+      background: url("~@assets/images/home/backgroundIMG.png");
+      background-size: cover;
+      .layer {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .homeFrameTop {
+    .bg(750px, 305px, "~@assets/images/home/home_frame_top_small.png");
+    color: #ffffff70;
+    // position: relative;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    @media screen and (max-device-height: 811px) {
+      .layer {
+        top: 205px;
+      }
+    }
+  }
+  .homeFrameBottom {
+    .bg(750px, 835px, "~@assets/images/home/home_frame_bottom.png");
+    color: #ffffff70;
+    // position: relative;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+  }
+  .centerInner{
+    width: 750px;
+    height: calc(100vh - 1140px);
+    // background-color: #e8cc40;
+    position: fixed;
+    top: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+}
+.top {
+  display: flex;
+  align-items: center;
+  .name {
+    margin-left: 15px;
+    .nameBox {
+      margin-top: 15px;
+      .bg(256px, 56px, "~@assets/images/modal/inputBox.png");
+      box-sizing: border-box;
+      padding: 0 26px;
+      .inputBox {
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 24px;
+        font-weight: 500;
+        color: #ffffff;
+        opacity: 0.8;
+        line-height: 56px;
+        padding: 0;
+      }
+    }
+  }
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 0 50px;
+}
+.personalInfo {
+  width: 100%;
+  margin-bottom: 40px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.box {
+  width: 100%;
+  margin-bottom: 40px;
+  .line {
+    display: flex;
+    .left,
+    .right {
+      width: 30%;
+      border: 1px solid #ffd65830;
+      margin-top: -1px;
+      line-height: 60px;
+      box-sizing: border-box;
+      // padding: 0 20px 0 40px;
+    }
+    .left {
+      text-align: center;
+    }
+    .right {
+      padding-left: 40px;
+      width: 70%;
+      margin-left: -1px;
+      color: #e8cc40;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.input {
+  display: none;
+}

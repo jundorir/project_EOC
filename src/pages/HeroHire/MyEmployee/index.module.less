@@ -1,0 +1,82 @@
+.MyEmployee {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  .SelectorArea {
+    margin-top: 34px;
+    padding-left: 90px;
+    padding-right: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93px;
+    background-image: url(~@assets/images/hire/selectClass_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .HeroArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    height: calc(100vh - 250px);
+
+    box-sizing: border-box;
+    overflow: hidden scroll;
+    position: relative;
+    .HeroBox {
+      width: 50%;
+      height: 500px;
+      background-image: url(~@assets/images/hire/hero_box_linerbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      background-position: bottom left;
+      display: flex;
+      flex-direction: column;
+      .CardBox {
+        width: 213px;
+        height: 344px;
+        margin: 10px auto;
+      }
+      .HeroStatus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        margin-bottom: 10px;
+
+        > span {
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #e79f38;
+        }
+      }
+      p {
+        margin: 0;
+        display: flex;
+        margin-left: 40px;
+        > span {
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #fefefe;
+          opacity: 0.5;
+          &:first-child {
+            width: 120px;
+            // display: flex;
+          }
+          &:last-child {
+            margin-left: 50px;
+            color: #e79f38;
+            opacity: 1;
+          }
+        }
+      }
+      p + p {
+        margin-top: 0px;
+      }
+    }
+  }
+}

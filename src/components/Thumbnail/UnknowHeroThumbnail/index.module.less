@@ -1,0 +1,22 @@
+@import "~@common/less/function.less";
+
+@unkonwRarity: SSR, SR, R;
+.unknowHeroThumbnail {
+  width: 168px;
+  position: relative;
+  height: 168px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  each(@unkonwRarity, {
+    &.@{value} {
+        &.checked {
+            .bg(168px, 168px, "~@assets/images/thumb/unknown_@{value}_bg.png");
+        }
+
+        .avatar {
+            .bg(150px, 150px, "~@assets/images/thumb/unknown_@{value}.png");
+        }
+    }
+});
+}

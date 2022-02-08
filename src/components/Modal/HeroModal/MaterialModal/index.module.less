@@ -1,0 +1,31 @@
+@import "~@common/less/function.less";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: auto;
+  text-align: center;
+
+  .stepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    .bg(402px, 66px, "~@assets/images/modal/input_bg.png");
+    padding: 0 12px;
+    box-sizing: border-box;
+    input {
+      text-align: center;
+    }
+    .minus {
+      flex-shrink: 0;
+      .bg(42px, 42px, "~@assets/images/modal/minus.png");
+    }
+    .plus {
+      flex-shrink: 0;
+      .bg(42px, 42px, "~@assets/images/modal/plus.png");
+    }
+  }
+}

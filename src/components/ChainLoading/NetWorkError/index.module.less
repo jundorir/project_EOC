@@ -1,0 +1,31 @@
+.network {
+  width: 581px;
+  height: 573px;
+  background-image: url("~@assets/images/modal/modal_frame.png");
+  background-repeat: no-repeat;
+  background-size: 581px 573px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .box {
+    padding: 75px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .error {
+      width: 230px;
+      height: 256px;
+      background-image: url("~@assets/images/networkError.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 60px;
+    }
+    .tips {
+      font-size: 26px;
+      color: #ffffff;
+      margin: 40px auto 50px;
+    }
+  }
+}

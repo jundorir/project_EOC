@@ -1,0 +1,138 @@
+@import "~@common/less/function.less";
+@import "~@common/less/animation.less";
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  animation: fadein 0.2s;
+  .top {
+    // height: 180px;
+  }
+  .middle {
+    width: 100%;
+    overflow: auto;
+    flex: auto;
+    margin: 30px 0;
+    .city {
+      font-size: 22px;
+      font-weight: 400;
+      color: #ffffff;
+      .cityImg {
+        .bg(440px, 196px, "~@assets/images/unionBattle/unionBattle_largeIMG_bottom.png");
+        position: relative;
+        text-align: center;
+        margin: 160px auto 0;
+        .img {
+          width: 400px;
+          height: 331px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-48%, -76%);
+        }
+        @media screen and (max-device-height: 811px) {
+          .img {
+            width: 279px;
+            height: 263px;
+          }
+        }
+        .name {
+          font-size: 24px;
+          font-weight: 600;
+          color: #512f1a;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-48%, -20%);
+        }
+      }
+      @media screen and (max-device-height: 811px) {
+        .cityImg {
+          .bg(410px, 178px, "~@assets/images/unionBattle/unionBattle_largeIMG_bottom.png");
+          margin: 80px auto 0;
+        }
+      }
+      .info {
+        margin-top: 28px;
+        text-align: center;
+        .white {
+          opacity: 0.4;
+        }
+        .yellow {
+          color: #d2b05b;
+        }
+        .nowHave {
+          color: #d2b05b;
+          font-size: 26px;
+          margin-top: 20px;
+        }
+        .onelogan {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+        }
+      }
+      .union {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        margin-top: 30px;
+        .unionIMG {
+          margin-right: 40px;
+        }
+        .right {
+          .people {
+            margin: 10px 0;
+            text-align: center;
+            .white {
+              opacity: 0.5;
+            }
+            .yellow {
+              color: #d2b05b;
+            }
+          }
+        }
+        .toView {
+          text-align: center;
+          text-decoration: underline;
+          opacity: 0.5;
+          margin-bottom: 58px;
+        }
+      }
+    }
+    .noBegin {
+      font-size: 26px;
+      font-weight: bold;
+      color: #d2b05b;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  .buttonBox {
+    width: 750px;
+    height: 200px;
+    .inner {
+      width: 450px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .firstLine {
+        // margin-bottom: 8px;
+      }
+    }
+  }
+}
+.layer {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  z-index: 9;
+  bottom: 10px;
+}
+.needMoney {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e89f37;
+  // margin-left: 50px;
+}

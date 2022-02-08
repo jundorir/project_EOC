@@ -1,0 +1,343 @@
+.Market {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // background-color: #000a00f3;
+  .SelectorArea {
+    background-image: url(~@assets/images/market/selectTop_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    .SelectorList {
+      margin-top: 50px;
+      padding-left: 90px;
+    }
+    .DropList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > div + div {
+        margin-left: 26px;
+      }
+      .SearchBtn {
+        margin-left: 24px;
+        width: 43px;
+        height: 41px;
+      }
+    }
+    .CurSearchArea {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 39px;
+      margin-top: 20px;
+      .CurSearchArea_left {
+        display: flex;
+        align-items: center;
+        > span {
+          font-size: 23px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          &:first-child {
+            color: #fefefe;
+            opacity: 0.5;
+          }
+          &:last-child {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-left: 20px;
+            color: #fced49;
+            opacity: 1;
+          }
+        }
+      }
+      .CurSearchArea_right {
+        width: 111px;
+        height: 38px;
+        background-image: url(~@assets/images/market/cancel_btn.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #fced48;
+        line-height: 38px;
+        text-align: center;
+      }
+    }
+  }
+  .HeroArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    height: calc(100vh - 290px);
+    box-sizing: border-box;
+    overflow: hidden scroll;
+    position: relative;
+    .HeroBox_container {
+      display: flex;
+      width: 50%;
+      height: 500px;
+      .HeroBox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(~@assets/images/hire/hero_box_linerbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom left;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        .CardBox {
+          width: 213px;
+          height: 344px;
+          margin: 20px auto;
+        }
+        p {
+          margin: 0;
+          display: flex;
+          margin-left: 30px;
+          > span {
+            font-size: 22px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #e79f38;
+            opacity: 1;
+            &:first-child {
+              width: 86px;
+              color: #fefefe;
+              opacity: 0.5;
+            }
+            &:nth-child(2) {
+              margin-right: 19px;
+              color: #fefefe;
+              opacity: 0.5;
+            }
+          }
+          .unit {
+            margin-left: 10px;
+          }
+        }
+        .almost_price {
+          margin-left: 106px;
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #e79f38;
+        }
+        p + p {
+          margin-top: 0px;
+        }
+        .HeroBox_bottom_border {
+          position: absolute;
+          bottom: 0;
+          height: 5px;
+          width: 100%;
+          background-image: url(~@assets/images/market/card_border_bottom.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .HeroBox_right_border {
+        width: 5px;
+        height: 100%;
+        background-image: url(~@assets/images/market/card_border_right.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .PropBox_container {
+      display: flex;
+      width: 50%;
+      height: 426px;
+      .PropBox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(~@assets/images/hire/hero_box_linerbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+        background-position: bottom left;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        .CardBox {
+          height: 223px;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+        > p {
+          margin: 0;
+          display: flex;
+          margin-left: 30px;
+          > span {
+            font-size: 22px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #e79f38;
+            opacity: 1;
+            &:first-child {
+              width: 86px;
+              color: #fefefe;
+              opacity: 0.5;
+            }
+            &:nth-child(2) {
+              margin-right: 19px;
+              color: #fefefe;
+              opacity: 0.5;
+            }
+          }
+          .unit {
+            margin-left: 10px;
+          }
+        }
+        .almost_price {
+          margin-left: 106px;
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #e79f38;
+        }
+        p + p {
+          margin-top: 0px;
+        }
+        .HeroBox_bottom_border {
+          position: absolute;
+          bottom: 0;
+          height: 5px;
+          width: 100%;
+          background-image: url(~@assets/images/market/card_border_bottom.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .HeroBox_right_border {
+        width: 5px;
+        height: 100%;
+        background-image: url(~@assets/images/market/card_border_right.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+
+    .SwitchBtns {
+      position: fixed;
+      bottom: 160px;
+      // left: 0;
+      padding-bottom: 20px;
+      width: 750px;
+      height: 225px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+
+      & > button + button {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.MarketSearch {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .SelectorArea {
+    height: 176px;
+    background-image: url(~@assets/images/market/selectTop_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .SearchType {
+      display: flex;
+      align-items: center;
+      margin-left: 19px;
+      font-size: 26px;
+      font-family: Kaiti SC;
+      font-weight: 400;
+      color: #ffffff;
+      img {
+        margin-left: 13px;
+        width: 17px;
+        height: 11px;
+      }
+    }
+    .SearchBox {
+      margin-left: 115px;
+      margin-top: 85px;
+      width: 550px;
+      height: 62px;
+      background-image: url(~@assets/images/market/search_input_bg.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.8);
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      .SearchBtn {
+        margin-left: 24px;
+        width: 43px;
+        height: 41px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .Search_Result_Box {
+    height: calc(100vh - 340px);
+    .Search_Result_title {
+      height: 99px;
+      margin: 0 62px;
+      line-height: 99px;
+      font-size: 28px;
+      font-family: Kaiti SC;
+      font-weight: 400;
+      color: #e79f38;
+    }
+    .Search_history_List {
+      height: calc(100vh - 480px);
+      overflow: hidden scroll;
+      .Search_history_item {
+        width: 626px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        height: 99px;
+        margin: 0 62px;
+        line-height: 99px;
+        font-size: 26px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        opacity: 0.5;
+        .HeroBox_bottom_border {
+          position: absolute;
+          bottom: 0;
+          height: 5px;
+          width: 100%;
+          background-image: url(~@assets/images/market/card_border_bottom.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  .Search_Back_Btn {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    width: 180px;
+    height: 180px;
+  }
+}

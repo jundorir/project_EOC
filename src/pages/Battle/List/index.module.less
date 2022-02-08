@@ -1,0 +1,106 @@
+.list {
+  height: 100%;
+  overflow: auto;
+  padding: 24px 0 70px 0;
+}
+.listItem {
+  width: 638px;
+  height: 293px;
+  margin: 0 auto 24px auto;
+  background: url("~@assets/images/battle/list_bg.png") center center no-repeat;
+  background-size: contain;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 33px;
+  .listContent {
+    width: 525px;
+    height: 94px;
+    padding-top: 15px;
+    margin: 0 auto 9px auto;
+    box-sizing: border-box;
+    .listTit {
+      font-size: 30px;
+      font-family: Kaiti SC;
+      font-weight: bold;
+      color: #fff04a;
+      line-height: 1;
+      margin: 0 0 12px 0;
+    }
+    .listFirst {
+      line-height: 1;
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: #ffffff;
+      opacity: 0.5;
+      margin: 0;
+    }
+  }
+
+  .fightingCapacity {
+    line-height: 1;
+    font-size: 22px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 33px 0;
+  }
+  .listContentSelected {
+    background: url("~@assets/images/battle/item_select.png") center center
+      no-repeat;
+    background-size: contain;
+  }
+  .listFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    .listFooterTit {
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: #ffffff;
+      opacity: 0.5;
+      line-height: 11px;
+      margin-right: 32px;
+    }
+  }
+}
+.listItemDisable {
+  background: url("~@assets/images/battle/list_bg2.png") center center no-repeat;
+  background-size: contain;
+}
+.reward {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  margin-right: 34px;
+  font-size: 26px;
+  color: #ffffff;
+  > label {
+    font-size: 22px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+}
+.rewardIcon {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+.rewardIconGold {
+  background: url("~@assets/images/battle/reward_gold.png") center center
+    no-repeat;
+  background-size: contain;
+}
+.rewardIconExperience {
+  background: url("~@assets/images/battle/reward_experience.png") center center
+    no-repeat;
+  background-size: contain;
+}
+.rewardIcon3 {
+  background: url("~@assets/images/battle/reward3.png") center center no-repeat;
+  background-size: contain;
+}

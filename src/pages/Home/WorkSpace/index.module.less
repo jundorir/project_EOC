@@ -1,0 +1,66 @@
+@import "~@common/less/function.less";
+.contain {
+  width: 584px;
+  position: absolute;
+  bottom: 45px;
+  left: 83px;
+  display: flex;
+  justify-content: space-between;
+  .left,
+  .middle,
+  .right {
+    .item {
+      .bg(171px, 120px, "~@assets/images/home/workSpace_frame.png");
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 600;
+      color: #ffffff90;
+      .word {
+        margin-top: 2px;
+      }
+      .itemIMG {
+        width: 55px;
+        height: 55px;
+        &.union {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_union.png");
+        }
+        &.hireHero {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_hireHero.png");
+        }
+        &.market {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_market.png");
+        }
+        &.warehouse {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_warehouse.png");
+        }
+        &.pub {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_pub.png");
+        }
+        &.unionWar {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_unionWar.png");
+        }
+        &.production {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_production.png");
+        }
+        &.hero {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_hero.png");
+        }
+        &.battle {
+          .bg(55px, 55px, "~@assets/images/home/workSpace_battle.png");
+        }
+      }
+    }
+  }
+  .middle {
+    margin-top: 66px;
+  }
+}
+@media screen and (max-device-height: 811px) {
+  .contain {
+    bottom: 50px;
+  }
+}

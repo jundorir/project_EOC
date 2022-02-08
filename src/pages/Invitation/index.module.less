@@ -1,0 +1,135 @@
+@import "~@common/less/function.less";
+@import "~@common/less/animation.less";
+.containBox {
+  width: 750px;
+  height: 100%;
+  //   background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 0.2s;
+  .header {
+    font-size: 24px;
+    font-family: Kaiti SC;
+    font-weight: bold;
+    color: #fff04a60;
+    text-align: center;
+    font-family: "楷体", "楷体_GB2312";
+    margin-top: 80px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    .title {
+      font-size: 40px;
+      color: #fff04a;
+      margin-bottom: 20px;
+    }
+    .QRCode {
+      width: 500px;
+      .bg(263px, 264px, "~@assets/images/invitation/invitation_QRCodeFrame.png");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto 0;
+      position: relative;
+      .QRCodeInner {
+        width: 216px;
+        height: 219px;
+        border: 1px solid #ffffff60;
+        position: absolute;
+        left: 23px;
+        top: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .qr {
+          width: 214px !important;
+          height: 214px !important;
+        }
+      }
+    }
+  }
+  .body {
+    width: 100%;
+    flex: auto;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    overflow: auto;
+    .copy {
+      margin: auto;
+      width: 500px;
+      .bg(500px, 66px, "~@assets/images/invitation/invitation_box.png");
+      display: flex;
+      align-items: center;
+      margin-bottom: 38px;
+      .link {
+        flex: auto;
+        height: 50px;
+        margin: 0 16px;
+        font-size: 22px;
+        color: #ffffff;
+        line-height: 50px;
+        opacity: 0.5;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-all;
+      }
+      .copybutton {
+        min-width: 119px;
+        .bg(119px, 55px, "~@assets/images/invitation/invitation_buttonS.png");
+        margin-right: 16px;
+        font-size: 20px;
+        // color: #e79f38;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .info {
+      width: 500px;
+      font-size: 22px;
+      color: #ffffff;
+      margin: auto;
+      .data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 5px solid #101a1d;
+        padding: 16px;
+        margin-bottom: 20px;
+        .left {
+          .white {
+            opacity: 0.5;
+          }
+          .yellow {
+            color: #e79f38;
+            opacity: unset;
+            margin-left: 27px;
+          }
+        }
+        .right {
+          color: #e79f38;
+        }
+        .getbutton {
+          min-width: 119px;
+          .bg(119px, 55px, "~@assets/images/invitation/invitation_buttonS.png");
+          font-size: 20px;
+          // color: #e79f38;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .buttton {
+      margin-right: 70px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.content{
+  width: 100%;
+  padding: 30px 0 30px 0;
+  .contentList{
+    display: flex;
+  }
+  .repeatTis{
+    margin: 40px auto 0 auto;
+    word-break: break-all;
+    padding: 17px 20px 20px 20px;
+    height: 124px;
+    background: url("~@assets/images/battle/repeat_tis_bg.png") center center no-repeat;
+    background-size: contain;
+    font-size: 22px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #e79f38;
+    line-height: 30px;
+    box-sizing: border-box;
+  }
+  .prizeItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: flex-start;
+    flex: 1;
+    .prizeItemHeader{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 21px;
+      img{
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+      .prizeItemNum{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 33px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+        border-radius: 0px 0px 20px 20px;
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: 600;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 33px;
+        z-index: 1;
+      }
+    }
+    .prizeItemTitle{
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #FEFEFE;
+      opacity: 0.5;
+      text-align: center;
+      line-height: 1;
+    }
+  }
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg) scale(1.1);
+  }
+  100%{
+    transform: rotate(360deg) scale(1.1);
+  }
+}

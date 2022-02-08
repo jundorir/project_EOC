@@ -1,0 +1,62 @@
+.member_container {
+  width: 572px;
+  height: 137px;
+  overflow: hidden;
+  background: url(~@assets/images/components/union_member/bg.png) left center no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  padding-right: 65px;
+  box-sizing: border-box;
+  font-size: 28px;
+  color: rgba(255, 255, 255, .8);
+  .info {
+    margin-left: 22px;
+    flex: 1;
+    min-width: 0;
+  }
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  .bp {
+    color: rgba(253, 226, 58, 1);
+  }
+  .position{
+    min-width: 80px;
+    text-align: right;
+  }
+}
+.avatar {
+  width: 146px;
+  height: 141px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(~@assets/images/components/union_member/modal_photoFrame.png);
+    background-size: contain;
+  }
+  .photo {
+    width: 110px;
+    border-radius: 100%;
+    height: 110px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

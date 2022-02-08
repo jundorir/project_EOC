@@ -1,0 +1,65 @@
+.DropSelect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 290px;
+  height: 54px;
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-right: 10px;
+  background-image: url("~@assets/images/market/dropInfo_bg.png");
+  background-size: 100% 100%;
+  > div {
+    display: flex;
+    align-items: center;
+    .label {
+      font-family: Kaiti SC;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 24px;
+      opacity: 0.5;
+    }
+    .value {
+      margin-left: 8px;
+      font-family: Kaiti SC;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 24px;
+    }
+  }
+  .dropBtn {
+    width: 42px;
+    height: 39px;
+    z-index: 99; //避免被遮挡
+  }
+  :global(.adm-popover) {
+    z-index: 1; //避免被下方内容遮挡
+    padding-top: 45px;
+    :global(.adm-popover-arrow) {
+      display: none;
+    }
+    :global(.adm-popover-inner) {
+      background: transparent;
+      :global(.adm-popover-inner-content) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 182px;
+        // height: 276px;
+        background-image: url("~@assets/images/hire/selectClass_menu.png");
+        background-size: 100% 100%;
+        :global(.adm-popover-inner-menu) {
+          min-width: unset;
+          :global(.adm-button) {
+            font-size: 24px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  width: 100%;
+}
+.bannerItem{
+  position: absolute;
+  width: 380px;
+  height: 525px;
+  //background: url(./banner_img.png) center center no-repeat;
+  background-size: cover;
+  z-index: 10;
+  //transform: scale(1.2);
+  opacity: .8;
+  transition: all .1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .bannerTit{
+    width: 292px;
+    font-size: 36px;
+    font-family: Kaiti SC;
+    font-weight: 400;
+    color: #E79F38;
+    margin-bottom: 58px;
+  }
+  .bannerTitOp{
+    color: #FFFFFF;
+    //opacity: 0.4;
+  }
+  .bannerImg{
+    width: 292px;
+    height: 406px;
+    position: relative;
+    >div{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,.5);
+      z-index: 2;
+      color: #fff;
+      font-size: 30px;
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}

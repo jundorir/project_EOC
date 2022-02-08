@@ -1,0 +1,40 @@
+.CustomStepper {
+  width: 308px;
+  height: 66px;
+  padding: 0 13px;
+  box-sizing: border-box;
+  background: url(~@assets/images/market/sale_input_bg.png) center center
+    no-repeat;
+  background-size: cover;
+  button {
+    border: none;
+    outline: none;
+    width: 42px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: transparent;
+  }
+  :global(.adm-stepper-minus) {
+    background-image: url(~@assets/images/union/btn_left.png);
+  }
+  :global(.adm-stepper-minus:disabled) {
+    color: transparent;
+  }
+  :global(.adm-stepper-plus) {
+    background-image: url(~@assets/images/union/btn_right.png);
+  }
+  :global(.adm-stepper-plus:disabled) {
+    color: transparent;
+  }
+  :global(.adm-stepper-input) {
+    border: none;
+    input {
+      font-size: 22px;
+      font-family: Kaiti SC;
+      font-weight: 400;
+      color: #fefefe;
+    }
+  }
+}

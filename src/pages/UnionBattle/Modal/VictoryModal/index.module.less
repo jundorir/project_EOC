@@ -1,0 +1,36 @@
+@import "~@common/less/animation.less";
+.modalBG {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s;
+  z-index: 99;
+  color: #ffffff;
+  font-size: 28px;
+  animation: popin 0.5s;
+  .modalBox {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    // overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contain{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      .center{
+        margin-top: 60px;
+      }
+    }
+  }
+}

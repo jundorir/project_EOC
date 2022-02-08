@@ -1,0 +1,41 @@
+@import "~@common/less/function.less";
+
+.battleFormationArea {
+  height: 665px;
+  overflow: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 110px;
+    box-sizing: border-box;
+    height: 240px;
+    &.one {
+      margin-top: 75px;
+      justify-content: space-evenly;
+    }
+  }
+
+  .bottom {
+    bottom: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    .power {
+      .text(30px, #FFF04A, bold, Kaiti SC);
+    }
+
+    .btn {
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.pageMain {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  .pageHeader{
+    margin-top: 26px;
+    height: 136px;
+    background:  url("~@assets/images/hire/selectClass_bg.png") center center no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    padding: 0 100px;
+    position: relative;
+    .levelBox{
+      position: absolute;
+      top: 54px;
+      right: 58px;
+      width: 228px;
+      height: 58px;
+      background:  url("~@assets/images/battle/level_bg.png") center center no-repeat;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      padding-left: 70px;
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+      opacity: 0.5;
+      line-height: 58px;
+      &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        height: 58px;
+        width: 58px;
+        background:  url("~@assets/images/battle/lightning.png") center center no-repeat;
+        background-size: 22px auto;
+      }
+    }
+  }
+  .pageContent{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: 200px;
+  }
+  .pageFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 287px;
+    padding: 24px 0 0 0;
+    .ctrls{
+      display: flex;
+      .ctrlItem{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contentCtrlText{
+          padding-top: 16px;
+          font-size: 26px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #FFFFFF;
+          opacity: 0.5;
+          margin: 0;
+        }
+        .ctrlItemFight{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: 17px;
+            margin-left: 17px;
+          }
+        }
+      }
+    }
+    .timeBtn{
+      position: absolute;
+      right: 103px;
+      bottom: 78px;
+      z-index: 5;
+    }
+  }
+  .footerBtn{
+    position: fixed;
+    bottom: 67px;
+    margin-left: 410px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    z-index: 15;
+    background:  url("~@assets/images/battle/icon_explain.png") 8px center no-repeat;
+    background-size: 24px;
+  }
+}
+

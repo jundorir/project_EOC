@@ -1,0 +1,173 @@
+@import "~@common/less/function.less";
+@import "~@common/less/animation.less";
+
+.middleCity {
+  width: 100%;
+  overflow: auto;
+  flex: auto;
+  margin: 30px 0 0;
+  .city {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    // height: 2000px;
+    // background-color: cadetblue;
+    .cityImg {
+      .bg(440px, 196px, "~@assets/images/unionBattle/unionBattle_largeIMG_bottom.png");
+      position: relative;
+      text-align: center;
+      margin: 160px auto 0;
+
+      .img {
+        width: 400px;
+        height: 331px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-48%, -76%);
+      }
+      // @media screen and (max-device-height: 811px) {
+      //   .img {
+      //     width: 279px;
+      //     height: 263px;
+      //   }
+      // }
+      .name {
+        font-size: 24px;
+        font-weight: 600;
+        color: #512f1a;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-48%, -20%);
+      }
+      // @media screen and (max-device-height: 811px) {
+      //   .name {
+      //     transform: translate(-48%, -10%);
+      //   }
+      // }
+    }
+    // @media screen and (max-device-height: 811px) {
+    //   .cityImg {
+    //     .bg(410px, 178px, "~@assets/images/unionBattle/unionBattle_largeIMG_bottom.png");
+    //     margin: 80px auto 0;
+    //   }
+    // }
+    .info {
+      margin-top: 28px;
+      text-align: center;
+      width: 750px;
+      // height: 70px;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      .white {
+        opacity: 0.4;
+      }
+      .yellow {
+        color: #d2b05b;
+      }
+    }
+    .pk {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 34px;
+      .top,
+      .bottom {
+        // width: 167px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .unionInfo {
+          margin-top: 20px;
+          font-size: 26px;
+          max-width: 240px;
+          overflow-y: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          .white {
+            color: #ffffff40;
+          }
+          .yellow {
+            color: #d2b05b;
+          }
+        }
+        .people {
+          margin: 10px 0;
+          // text-align: center;
+          .white {
+            opacity: 0.5;
+          }
+          .yellow {
+            color: #d2b05b;
+          }
+        }
+        .toView {
+          // text-align: center;
+          text-decoration: underline;
+          opacity: 0.5;
+          // margin-bottom: 58px;
+          position: relative;
+          .toViewLayer {
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9;
+          }
+        }
+      }
+      .middle {
+        margin-top: 80px;
+        .bg(69px, 92px, "~@assets/images/unionBattle/unionBattle_vs.png");
+      }
+      // .bottom {
+      //   transform: translate(33px);
+      // }
+    }
+    // @media screen and (max-device-height: 811px) {
+    //   .pk {
+    //     margin: 30px auto;
+    //   }
+    // }
+  }
+}
+.buttonBox {
+  width: 750px;
+  height: 120px;
+  // margin-bottom: 35px;
+  .button {
+    .bg(200px, 78px, "~@assets/images/buttonFrame.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff04a;
+    margin-bottom: 15px;
+    // margin-bottom: 100px;
+    margin: auto;
+    .buttonlayer {
+      width: 200px;
+      height: 78px;
+      position: fixed; 
+      z-index: 9;
+    }
+  }
+}
+.layer {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  z-index: 9;
+  bottom: 10px;
+  left: 0;
+}

@@ -1,0 +1,285 @@
+@import "~@common/less/function.less";
+
+.Sale {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  .HeroConfig {
+    display: flex;
+    .CardBox {
+      padding-top: 110px;
+      padding-left: 47px;
+      width: 372px;
+      box-sizing: border-box;
+      .EmptyBox {
+        width: 254px;
+        height: 420px;
+        border: 1px solid #ffffff44;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 24px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #ffffff;
+          opacity: 0.3;
+        }
+      }
+    }
+    .HeroConfig {
+      width: 373px;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form_item {
+        .form_item_name {
+          font-size: 22px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #fefefe;
+          opacity: 0.5;
+          margin-bottom: 17px;
+        }
+        .switch {
+          display: flex;
+          width: 308px;
+          height: 66px;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 15px;
+          box-sizing: border-box;
+          background: url(~@assets/images/market/sale_input_bg.png) center
+            center no-repeat;
+          background-size: cover;
+          button {
+            border: none;
+            outline: none;
+            width: 42px;
+            height: 39px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+          }
+          .switch_value {
+            font-size: 22px;
+            font-family: Kaiti SC;
+            font-weight: 400;
+            color: #fefefe;
+          }
+          .switch_left {
+            background-image: url(~@assets/images/union/btn_left.png);
+          }
+          .switch_right {
+            background-image: url(~@assets/images/union/btn_right.png);
+          }
+        }
+      }
+      .form_item + .form_item {
+        margin-top: 35px;
+      }
+      .actions {
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+      .gasfee {
+        margin: 0;
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #fefefe;
+        opacity: 0.5;
+      }
+    }
+  }
+  .PropsConfig {
+    .PropsTop {
+      display: flex;
+      .CardBox {
+        padding-top: 110px;
+        padding-left: 47px;
+        width: 372px;
+        box-sizing: border-box;
+        .propBox {
+          width: 255px;
+          height: 422px;
+        }
+        .EmptyBox {
+          width: 254px;
+          height: 420px;
+          border: 1px solid #ffffff44;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          span {
+            font-size: 24px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #ffffff;
+            opacity: 0.3;
+          }
+        }
+      }
+      .PropsForm {
+        width: 373px;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .form_item {
+          .form_item_name {
+            font-size: 22px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #fefefe;
+            opacity: 0.5;
+            margin-bottom: 17px;
+          }
+          .switch {
+            display: flex;
+            width: 308px;
+            height: 66px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            box-sizing: border-box;
+            background: url(~@assets/images/market/sale_input_bg.png) center
+              center no-repeat;
+            background-size: cover;
+            button {
+              border: none;
+              outline: none;
+              width: 42px;
+              height: 39px;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+            }
+            .switch_value {
+              font-size: 22px;
+              font-family: Kaiti SC;
+              font-weight: 400;
+              color: #fefefe;
+            }
+            .switch_left {
+              background-image: url(~@assets/images/union/btn_left.png);
+            }
+            .switch_right {
+              background-image: url(~@assets/images/union/btn_right.png);
+            }
+          }
+        }
+        .form_item + .form_item {
+          margin-top: 35px;
+        }
+      }
+    }
+    .PropsBot {
+      text-align: center;
+      .actions {
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+      .gasfee {
+        margin: 0;
+        font-size: 22px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #fefefe;
+        opacity: 0.5;
+      }
+    }
+  }
+  .SelectorArea {
+    margin-top: 34px;
+    padding-left: 10px;
+    padding-right: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 93px;
+    background-image: url(~@assets/images/hire/selectClass_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .HeroArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-top: 30px;
+    height: calc(100vh - 920px);
+    overflow: hidden scroll;
+
+    .HeroThumb {
+      width: 25%;
+    }
+  }
+  .Bag {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    max-height: 869px;
+    overflow: hidden scroll;
+    .BagItem {
+      width: 25%;
+      margin-top: 30px;
+      position: relative;
+      text-align: center;
+      img {
+        width: 149px;
+        height: 149px;
+      }
+      span {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        opacity: 0.8;
+      }
+      h5 {
+        margin: 0;
+        text-align: center;
+        font-size: 24px;
+        font-family: Kaiti SC;
+        font-weight: bold;
+        color: #ffffff;
+        opacity: 0.5;
+      }
+      .checked_border {
+        
+        position: absolute;
+        top: -13px;
+        left: 0;
+        width: 176px;
+        height: 176px;
+        background-image: url(~@assets/images/market/prop_checked.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: auto;
+    text-align: center;
+    .tips1 {
+      .text(22px, #E89F37, 600, PingFang SC);
+    }
+    .tips2 {
+      .text(22px, rgba(255, 255, 255, 0.5), 600, PingFang SC);
+    }
+  }
+}

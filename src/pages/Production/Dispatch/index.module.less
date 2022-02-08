@@ -1,0 +1,74 @@
+.container {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  height: 147px;
+  overflow: hidden;
+  padding: 20px 20px 20px 110px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: url(~@assets/images/production/dispatch_header_bg.png) center center no-repeat;
+  background-size: 100%;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 0;
+      flex: 1;
+    }
+    span {
+      color: rgba(231, 159, 56, 1);
+    }
+  }
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.selected_list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  height: 230px;
+  flex: none;
+  transition: height 0.3s linear;
+}
+.show_more {
+  height: 440px;
+}
+.hero_list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  *:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.tips {
+   text-align: center;
+   margin-top: 12px;
+}
+.selector {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background: url(~@assets/images/production/hero_selector_bg.png) center center ;
+  background-size: contain;
+}

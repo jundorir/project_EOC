@@ -1,0 +1,16 @@
+.setting_slider .adm-slider-thumb {
+    top: 20%;
+}
+
+.setting_slider .adm-slider-track {
+    background-color: transparent;
+}
+
+.setting_slider .adm-slider-thumb {
+    width: 42px;
+    height: 39px;
+    background: url("~@assets/images/setting/setting_square.png");
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+}

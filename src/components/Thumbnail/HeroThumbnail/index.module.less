@@ -1,0 +1,131 @@
+@import "~@common/less/const.less";
+@import "~@common/less/function.less";
+
+.thumbnailPlaceholder {
+  width: 150px;
+}
+
+.thumbnail {
+  width: 150px;
+  position: relative;
+  transform: translate3D(0, 0, 0);
+  &.checked {
+    .combo {
+      filter: grayscale(1);
+    }
+  }
+
+  &.disabled {
+    filter: grayscale(1);
+  }
+
+  .avatarBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    &.free {
+      position: absolute;
+      top: 0;
+    }
+
+    &.empty {
+      .bg(150px, 150px,"~@assets/images/thumb/empty.png");
+    }
+
+    .avatar {
+      width: 133px;
+      height: 133px;
+      position: relative;
+
+      .top {
+        .text(20px);
+        display: flex;
+        padding: 7px;
+        justify-content: space-between;
+        .checked {
+          .bg(33px, 29px,"~@assets/images/thumb/checked.png");
+        }
+      }
+      .bottom {
+        display: flex;
+        padding: 0 7px;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        .text(20px, rgba(255, 255, 255, 0.8));
+        .starBox {
+          display: flex;
+          align-items: center;
+          .star {
+            .bg(28px, 28px, "~@assets/images/thumb/star.png");
+          }
+        }
+
+        .status {
+          width: 28px;
+          height: 28px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .cover {
+        height: 88px;
+        opacity: 0.6;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      //   each(@heroes, {
+      //   &.hero_@{value} {
+      //       .bg(133px, 133px, "~@assets/images/thumb/heroes/@{value}.png");
+      //    }
+      // });
+
+      &.hero {
+        // .bg(133px, 133px, "~@assets/images/thumb/heroes/@{value}.png");
+        width: 133px;
+        height: 133px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      each(@rarity, {
+      &.@{value} {
+          .top {
+              .rarity {
+                  color: extract(@rarity-color, @index);
+              }
+          }
+
+          .cover {
+              .linearGradient(extract(@rarity-cover, @index));
+          }
+      }
+  });
+    }
+  }
+  .avatarCover {
+    .bg(150px, 150px, "~@assets/images/thumb/border.png");
+    position: absolute;
+    top: 0;
+  }
+
+  .title {
+    .text(24px);
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .titleEllipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

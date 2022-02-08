@@ -1,0 +1,114 @@
+.container {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 150px;
+}
+.top {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 112px 36px 20px 36px;
+  line-height: 1;
+  background: url(~@assets/images/union/top_bg.png);
+}
+.header {
+  display: flex;
+  margin-bottom: 50px;
+}
+.content {
+  flex: 1;
+  min-width: 0;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 0;
+}
+.info {
+  flex: 1;
+  min-width: 0;
+}
+.name {
+  font-size: 26px;
+  margin: 0 0 15px;
+  color: rgba(255, 240, 74, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.id {
+  margin: 0;
+}
+.actions {
+  & > * {
+    margin-left: 5px;
+  }
+}
+.value {
+  margin-top: 50px;
+  height: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    RGBA(14, 18, 19, 1),
+    RGBA(49, 57, 59, 1)
+  );
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  span {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 14px;
+    border-radius: 14px;
+    display: inline-block;
+    background: linear-gradient(0deg, #F0BF28 0%, #FFE953 100%);;
+  }
+}
+.level,
+.adding {
+  margin-top: 30px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.level span:first-child {
+  color: white;
+}
+.adding span:last-child {
+  font-size: 30px;
+  color: red;
+}
+
+.btns {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.body {
+  flex: 1;
+  overflow: hidden;
+}
+.form {
+  width: 402px;
+  height: 66px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  background: url(~@assets/images/union/invite_bg.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px;
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

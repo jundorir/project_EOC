@@ -1,0 +1,139 @@
+.modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  background: #000;
+  animation: scaleAndOpacity .7s ease 0s 1 normal forwards;
+  transform: scale(0);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modalMain{
+    position: relative;
+    width: 100%;
+    .modalMainBig{
+      position: absolute;
+      left: 0;
+      top: -190px;
+      width: 750px;
+      height: 750px;
+      //background: url("~@assets/images/tavern/animation_sun.png") center center no-repeat;
+      //background-size: contain;
+      //animation: rotate 10s linear infinite;
+      z-index: 1;
+    }
+    .modalMainContent{
+      width: 348px;
+      height: 600px;
+      margin: 0 auto 39px auto;
+      background-size: contain;
+      position: relative;
+      z-index: 2;
+      &:before{
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height:  100%;
+        background: url("~@assets/images/battle/result_content_bg.png") top center no-repeat;
+        filter: grayscale(100%) brightness(150%);
+        background-size: contain;
+        z-index: -1;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          list-style: none;
+          display: flex;
+          //justify-content: center;
+          padding-left: 68px;
+          margin-bottom: 30px;
+          align-items: center;
+          img{
+            width: 64px;
+            display: block;
+          }
+          >div{
+            padding-left: 18px;
+            display: flex;
+            flex-direction: column;
+          }
+          span{
+            font-size: 22px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #FEFEFE;
+            line-height: 1;
+            opacity: 0.7;
+          }
+          label{
+            font-size: 22px;
+            font-family: PingFang SC;
+            font-weight: 600;
+            color: #FEFEFE;
+            line-height: 1;
+            margin-bottom: 11px;
+          }
+        }
+      }
+      .modalTit1{
+        font-size: 60px;
+        font-family: Kaiti SC;
+        font-weight: bold;
+        color: #FFFFFF;
+        line-height: 46px;
+        margin: 0 0 25px 0;
+        padding-top: 47px;
+        text-align: center;
+      }
+      .modalTit2{
+        font-size: 24px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 30px;
+        opacity: 0.7;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .icon{
+        width: 63px;
+        height: 63px;
+      }
+    }
+    .modalFooter{
+      padding-top: 57px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg) scale(1.1);
+  }
+  100%{
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+@keyframes scaleAndOpacity {
+  0%{
+    transform: scale(.2);
+    opacity: 0;
+  }
+  80%{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}

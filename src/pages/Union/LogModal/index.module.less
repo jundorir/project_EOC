@@ -1,0 +1,70 @@
+.body {
+  width: 588px;
+  height: 1134px;
+  background: url(~@assets/images/union/log_bg.png);
+  background-size: contain;
+  padding: 0 100px 150px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  top: 100px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  &::before, &::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -13px;
+    transform: rotate(45deg);
+    display: inline-block;
+    background: RGBA(126, 83, 37, 1);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.title {
+  font-size: 36px;
+  color: rgba(48, 31, 12, 1);
+  text-align: center;
+  margin: 90px 0 0;
+}
+.date {
+  font-size: 22px;
+  color: rgba(127, 84, 37, 1);
+  margin-top: 36px;
+  text-align: center;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex: 1;
+  overflow: auto;
+  color: rgba(48, 31, 12, 1);
+  li {
+    word-wrap: break-word;
+    padding: 15px 0;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(70, 55, 43, 0.3);
+    box-sizing: border-box;
+  }
+}
+.actions {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}

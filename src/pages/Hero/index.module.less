@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .selector {
+    padding-left: 56px;
+    padding-right: 63px;
+  }
+
+  .list {
+    padding: 40px;
+
+    :global {
+      .adm-infinite-scroll {
+        padding: 0;
+      }
+    }
+  }
+
+  .operation {
+    // display: flex;
+    height: 75px;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 30px 40px 0;
+    // box-sizing: border-box;
+  }
+}

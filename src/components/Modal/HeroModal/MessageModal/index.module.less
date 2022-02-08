@@ -1,0 +1,51 @@
+.messageModal {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  .contain {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 417px;
+
+    .title {
+      font-size: 36px;
+      font-weight: 400;
+      text-align: center;
+      padding-top: 82px;
+      font-family: Kaiti SC;
+    }
+    .box {
+      margin-top: 33px;
+      margin-bottom: 33px;
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      align-items: center;
+      .modal_up {
+        width: 402px;
+        height: 22px;
+        background: url("~@assets/images/modal/modal_up.png");
+        background-size: cover;
+        // margin-top: 33px;
+      }
+      .modal_down {
+        width: 402px;
+        height: 22px;
+        background: url("~@assets/images/modal/modal_down.png");
+        background-size: cover;
+        // margin-top: 33px;
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+      .btn {
+        width: 200px;
+      }
+    }
+  }
+}

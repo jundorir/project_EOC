@@ -1,0 +1,49 @@
+@import "~@common/less/function.less";
+.selectContent {
+  padding: 80px 0 50px 0;
+  .selectList{
+    display: flex;
+    font-size: 36px;
+    font-family: Kaiti SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    height: 40px;
+    >label{
+      width: 170px;
+      text-align: right;
+      //margin-right: 20px;
+      margin-left: -60px;
+      white-space: nowrap;
+    }
+    .selectListCheckbox{
+      width: 30px;
+      height: 30px;
+      border: 1px solid #FFFFFF;
+      opacity: 0.3;
+      border-radius: 50%;
+      margin-left: 34px;
+      position: relative;
+      >div{
+        display: block;
+        width: 18px;
+        height: 18px;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: yellow;
+        border-radius: 50%;
+        font-size: 36px;
+        font-family: Kaiti SC;
+        font-weight: 400;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+

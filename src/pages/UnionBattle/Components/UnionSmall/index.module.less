@@ -1,0 +1,26 @@
+@import "~@common/less/function.less";
+.IMG {
+  .bg(93px, 143px, "~@assets/images/unionBattle/unionBattle_unionFrame.png");
+  position: relative;
+  .IMGBG {
+    overflow: hidden;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &.IMGOther {
+    .bg(167px, 258px, "~@assets/images/unionBattle/unionBattle_myUnionFrame.png");
+  }
+}

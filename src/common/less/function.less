@@ -1,0 +1,23 @@
+.bg(@width, @height, @url) {
+  width: @width;
+  height: @height;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(@url);
+}
+.text(@font-size, @color: #fff, @font-weight: bold, @font-family: Kaiti SC) {
+  font-size: @font-size;
+  font-family: @font-family;
+  font-weight: @font-weight;
+  color: @color;
+}
+
+.pos(@top: 0px, @left: 0px, @position: absolute) {
+  top: @top;
+  left: @left;
+  position: absolute;
+}
+
+.linearGradient(@from, @to: #ffffff00) {
+  background: linear-gradient(0deg, @from 0%, @to 100%);
+}
